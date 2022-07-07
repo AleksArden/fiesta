@@ -1,0 +1,65 @@
+/* .title {
+  font-size: 40px;
+  color: darkgray;
+  text-shadow: 2px 2px 4px #000000;
+  font-style: oblique;
+  font-weight: 900;
+} */
+/* .title {
+  font-family: "Tangerine", cursive;
+  font-size: 100px;
+  color: darkviolet;
+  font-weight: 700;
+  text-shadow: 4px 4px 7px #ca1db6;
+} */
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 75px 150px;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  background-color: darkcyan;
+  font-size: large;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn::after {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  margin-left: 35px;
+  background-image: url(../images/зображення_viber_2022-07-06_22-20-52-044.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  background-image: url(../images/зображення_viber_2022-05-26_16-17-49-273.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateY(200px);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover::after {
+  transform: translateY(-200px);
+}
+
+.btn:hover::before {
+  transform: translateY(0);
+}
